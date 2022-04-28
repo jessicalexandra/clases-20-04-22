@@ -29,4 +29,12 @@ public class Producto {
     public void setReferencia(String referencia) {
         this.referencia = referencia;
     }
+
+    @Override
+    public String toString() {
+        return "Producto{" +
+                "name='" + name + '\'' +
+                ", brand='" + brand + '\'' +
+                ", referencia='" + referencia + '\'';
+    }
 }

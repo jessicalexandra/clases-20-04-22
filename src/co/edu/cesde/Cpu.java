@@ -5,6 +5,7 @@ public class Cpu extends Producto {
     private String ram;
     private String hardDisk;
 
+
     public String getRam() {
         return ram;
     }
@@ -20,4 +21,13 @@ public class Cpu extends Producto {
     public void setHardDisk(String hardDisk) {
         this.hardDisk = hardDisk;
     }
+
+    @Override
+    public String toString() {
+        return super.toString() +
+                "ram='" + ram + '\'' +
+                ", hardDisk='" + hardDisk + '\'' +
+                '}';
+    }
 }
+
